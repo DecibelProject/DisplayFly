@@ -16,7 +16,7 @@ if (!fs.existsSync(FILES_DIR)) {
 }
 
 // Главная страница
-app.get('.netlify/functions/server', (req, res) => {
+app.get('/', (req, res) => {
     let fileList = '';
 
     // Читаем все файлы из директории
