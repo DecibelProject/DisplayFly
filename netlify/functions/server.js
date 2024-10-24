@@ -3,7 +3,7 @@ const serverless = require('serverless-http');
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/.netlify/functions/server', (req, res) => {
   res.send('Hello from Node.js on Netlify!');
 });
 
